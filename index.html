@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteio Corrida Sicoob</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <h1>
+                    <div id="corrida">CORRIDA</div>
+                    <div id="sicoobHeader">SICOOB</div>
+                    <div id="cityHeader">AÇAILANDIA</div>
+                </h1>
+            </div>
+            <div>
+                <h2>SORTEIO DE BRINDES</h2>
+                <P>Parceria cooperada. Veja quem corre com a gente.</P>
+                <a href="assets/pages/corredores.html">acessar lista de corredores</a>
+            </div>
+        </header>
+        <main>
+            <section class="sorteio">
+                <div class="input">
+                    <div class="title">Configurar sorteio</div>
+                        <div class="inputs">
+                            <div class="initFinalNb" id="initNumber">
+                            <div class="number">Número Inicial</div>
+                            <input type="number" placeholder="Ex: 1">
+                            </div>
+                            <div class="initFinalNb">
+                                <div class="number">Número Inicial</div>
+                                <input type="number" placeholder="Ex: 500">
+                            </div>
+                        </div>
+
+                        <!-- <div class="qtdNumber">
+                            <div class="qtdText">Quantidade de numeros a sortear</div>
+                            <input type="number">
+                        </div> -->
+
+                        <div class="buttons">
+                            <button class="sortear">SORTEAR</button>
+                            <button class="clear">Limpar sorteio</button>
+                        </div>
+                </div>
+            </section>
+
+            <section class="result">
+                <div class="title">NÚMERO SORTEADO</div>
+                <div class="numberSorteado">128</div>
+                <div class="boxes">
+                   <div class="box1">
+                        <div class="titleResult">NOME DO PARTICIPANTE</div>
+                        <div class="subResult">Hiago Henrique Gomes</div>
+                   </div>
+                   <div class="box2">
+                    <div class="titleResult">APELIDO</div>
+                    <div class="subResult">Djalminha</div>
+                   </div>
+                   <div class=" box3">
+                    <div class="titleResult">Nº DE PEITO</div>
+                    <div class="subResult">2832</div>
+                   </div>
+                </div>
+            </section>   
+            <section class="sorteados">
+                <div>SORTEADOS</div>
+                <div class="names">
+                    <div class="listed">1º · 128 · Hiago Henrique Gomes · Nº Peito 2832</div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

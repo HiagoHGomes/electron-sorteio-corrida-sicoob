@@ -1,0 +1,29 @@
+{
+  "name": "sorteio-corrida",
+  "version": "1.0.0",
+  "description": "Sorteio Corrida Sicoob Açailândia",
+  "author": "Hiago",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "br.com.hiago.sorteiocorrida",
+    "productName": "Sorteio Corrida Sicoob",
+    "win": {
+      "target": "nsis",
+      "icon": "build/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "devDependencies": {
+    "electron": "^45.2.3",
+    "electron-builder": "^26.18.0",
+    "electron-reload": "^2.0.0-alpha.1"
+  }
+}
