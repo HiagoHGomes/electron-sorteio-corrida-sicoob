@@ -1,0 +1,126 @@
+header p {
+    color: #C5D916;
+    font-size: 16px;
+    font-weight: bolder;
+    text-align: right;
+}
+
+
+
+.buscar {
+    width: 100%;
+}
+
+.buscar p{
+    font-weight: 500;
+    font-size: 14px;
+    color: #BFE3DD;
+    margin-bottom: 2px;
+}
+
+.buscar input {
+    width: 81%;
+    height: 52px;
+    border-radius: 12px;
+    margin-right: 20px;
+}
+
+.buscar a {
+    width: 25%;
+    font-size: 15px;
+    font-weight: bolder;
+    text-decoration: none;
+    border: 2px solid #2CC5AE;
+    border-radius: 12px;
+    color: white;
+    padding: 15px;
+}
+
+.tabela-container {
+    max-height: 320px; 
+    overflow-y: auto;  
+    margin-top: 15px;  
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate; 
+    border-spacing: 0;
+    border-radius: 12px; 
+    overflow: hidden; 
+}
+
+table, th, td {
+    border: none !important;
+}
+
+table thead {
+    background-color: #2cc5ae;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+table thead th {
+    text-align: left;
+    font-size: 14px;
+    font-weight: bolder;
+    color: #06353A;
+    padding: 15px 10px; 
+}
+
+tbody td {
+    padding: 15px 10px; 
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #EEF6F5;
+}
+
+.nPeito {
+    font-size: 18px;
+    font-weight: bolder;
+    color: #06353A;
+}
+
+.nome {
+    font-size: 16px;
+    font-weight: 600;
+    color: #06353A;
+}
+
+.apelido {
+    font-size: 15px; 
+    color: #3F6B6E;
+}
+
+.tabela-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.tabela-container::-webkit-scrollbar-track {
+    background: #EEF6F5;
+    border-radius: 0 12px 12px 0;
+}
+
+.tabela-container::-webkit-scrollbar-thumb {
+    background-color: #2cc5ae;
+    border-radius: 10px;
+    border: 2px solid #EEF6F5;
+}
+
+.tabela-container::-webkit-scrollbar-thumb:hover {
+    background-color: #239e8b;
+}
+
+@supports (scrollbar-width: thin) {
+    .tabela-container {
+        scrollbar-width: thin;
+        scrollbar-color: #2cc5ae #EEF6F5;
+    }
+}
