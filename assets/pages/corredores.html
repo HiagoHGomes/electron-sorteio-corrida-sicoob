@@ -6,7 +6,8 @@
     <title>Sorteio Corrida Sicoob</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="corredores.css">
-    <script src="../script.js" defer></script>
+    <script src="../../data/inscritos.js"></script>
+    <script src="corredores.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -20,7 +21,7 @@
             </div>
             <div>
                 <h2>CORREDORES INSCRITOS</h2>
-                <P>Total: 600</P>
+                <P class="qtdInscritos"></P>
             </div>
         </header>
         <main>
@@ -38,11 +39,9 @@
                         <th>APELIDO</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody class="pegarNoJs">
                     <tr>
-                        <td class="nPeito">1235</td>
-                        <td class="nome">Hiago Henrique</td>
-                        <td class="apelido">Djalminha</td>
+                       
                     </tr>
                 </tbody>
             </table>
