@@ -10,11 +10,16 @@ let n1 = Number(document.querySelector("#n1").value);
 let n2 = Number(document.querySelector("#n2").value);
 
 
+
 function mainFunction(){
-    randomNumber();
-    renderSorteado();
-    showSorteio();
-}
+    do {
+        randomNumber();
+
+    } while (inscritos[resultado - 1].concorreSorteio !== true);
+        renderSorteado();
+        showSorteio();
+    }
+
 
 function randomNumber(){
     let min = Math.ceil(Math.min(n1, n2));
@@ -22,6 +27,8 @@ function randomNumber(){
      resultado = Math.floor(Math.random() * (max - min + 1)) + min;
      console.log(resultado);
 }
+
+
 
 
 function renderSorteado(){
@@ -37,6 +44,10 @@ function showSorteio(){
     sorteioShow.style.display = "none";
     resultadoHTML.style.display = "flex";
 }
+
+
+
+
 
 
 
