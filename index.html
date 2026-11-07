@@ -45,30 +45,42 @@
                         </div> -->
 
                         <div class="buttons">
-                            <button class="sortear" onclick="randomNumber()">SORTEAR</button>
-                            <button class="clear">Limpar sorteio</button>
+                            <button class="sortear" onclick="mainFunction()">SORTEAR</button>
+                            <button class="clear" onclick="limparSorteio()">Limpar sorteio</button>
                         </div>
                 </div>
             </section>
 
-            <section class="result">
+            <section class="result" id="displayNone">
                 <div class="title">NÚMERO SORTEADO</div>
-                <div class="numberSorteado">128</div>
+                <div class="numberSorteado"></div>
                 <div class="boxes">
                    <div class="box1">
                         <div class="titleResult">NOME DO PARTICIPANTE</div>
-                        <div class="subResult">Hiago Henrique Gomes</div>
+                        <div class="subResult" id="nameResult"></div>
                    </div>
                    <div class="box2">
                     <div class="titleResult">APELIDO</div>
-                    <div class="subResult">Djalminha</div>
+                    <div class="subResult" id="nickname"></div>
                    </div>
                    <div class=" box3">
                     <div class="titleResult">Nº DE PEITO</div>
-                    <div class="subResult">2832</div>
+                    <div class="subResult" id="nPeito"></div>
                    </div>
                 </div>
-            </section>   
+            </section>
+
+            <section class="result" id="displayShow">
+                 <div class="title">AGUARDANDO SORTEIO</div>
+                <div class="interrogacao">?</div>
+                <div class="">Selecione um intervalo de dois numeros e clique em SORTEAR</div>
+                <span class="pontos">
+                    <br>
+                    <i class="p1"></i>
+                    <i class="p2"></i>
+                    <i class="p3"></i>
+                </span>
+            </section>
             <section class="sorteados">
                 <div>SORTEADOS</div>
                 <div class="names">

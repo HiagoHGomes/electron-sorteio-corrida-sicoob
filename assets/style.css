@@ -105,7 +105,13 @@ main{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    border: 2px solid #2CC5AE;
 }
+
+#displayNone {
+    display: none;
+}
+
 
 .result .title {
     color: #BFE3DD;
@@ -113,6 +119,55 @@ main{
 }
 
 .result .numberSorteado{
+    font-size: 160px;
+    font-weight: bolder;
+    font-style: italic;
+    color: #C5D916;
+}
+
+@keyframes pulso {
+    0%, 100% { opacity: .35; }
+    50%      { opacity: 1; }
+}
+
+.p1, .p2, .p3 {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #C5D916;
+    animation: pulso 1.4s infinite;
+}
+
+.p2 { animation-delay: .2s; }
+.p3 { animation-delay: .4s; }
+
+
+
+@keyframes quicar {
+    0%, 100% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+    }
+    40% {
+        transform: translateY(-24px);
+        animation-timing-function: ease-in;
+    }
+    60% {
+        transform: translateY(0);
+    }
+    70% {
+        transform: translateY(-6px);
+        animation-timing-function: ease-in;
+    }
+    80% {
+        transform: translateY(0);
+    }
+}
+
+.interrogacao {
+    display: inline-block;
+    animation: quicar 1.6s infinite;
     font-size: 160px;
     font-weight: bolder;
     font-style: italic;
@@ -239,6 +294,7 @@ main{
     gap: 10px;
     padding: 15px; 
     margin-bottom: 10px;
+    display: none;
 }
 
 
