@@ -10,6 +10,7 @@ function rendTable(){
     for(i = 0; i <qtdInscritos; i++){
        setTable.innerHTML += `
          <tr>
+             <td class="nPeito">${inscritos[i].id}</td>
             <td class="nPeito">${inscritos[i].numeroPeito}</td>
             <td class="nome">${inscritos[i].nome}</td>
             <td class="apelido">${inscritos[i].apelido}</td>

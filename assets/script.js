@@ -9,7 +9,15 @@ let resultadoHTML = document.querySelector(".sorteados");
 let n1 = Number(document.querySelector("#n1").value);
 let n2 = Number(document.querySelector("#n2").value);
 
+let sorteados = [{
+    id: id, 
+    apelido: apelido, 
+    nome: nome, 
+    numeroPeito: numeroPeito, 
+    concorreSorteio: false 
+}]
 
+console.log(sorteados.length)
 
 function mainFunction(){
     do {
@@ -45,6 +53,16 @@ function showSorteio(){
     resultadoHTML.style.display = "flex";
 }
 
+
+function adicionarSorteado(id, apelido, nome, numeroPeito, concorreSorteio = false) {
+    sorteados.push({
+        id,
+        apelido,
+        nome,
+        numeroPeito,
+        concorreSorteio
+    });
+}
 
 
 
