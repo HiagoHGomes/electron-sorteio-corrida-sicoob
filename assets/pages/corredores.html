@@ -6,7 +6,7 @@
     <title>Sorteio Corrida Sicoob</title>
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="corredores.css">
-    <script src="../../data/inscritos.js"></script>
+    <script src="../data/inscritos.js"></script>
     <script src="corredores.js" defer></script>
 </head>
 <body>
@@ -27,7 +27,7 @@
         <main>
             <div class="buscar">
                 <p>Buscar por nome ou nº de peito:</p>
-                <input type="text">
+                <input type="text" oninput="readInput()">
                 <a href="../../index.html">VOLTAR AO SORTEIO</a>
             </div>
             <div class="tabela-container">
